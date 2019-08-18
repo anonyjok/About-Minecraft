@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#background-container {
+    position: fixed;
+    top: -40%;
+    z-index: 5;
+    height: 140%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    filter: blur(2px);
+}
+
+:not(#background-container) {
+    z-index: 10;
+}
+
+#notBackground {
+    position: absolute;
+    top: 0px;
+}
+
+#background-slide {
+    display: flex;
+    width: 100%;
+}
+
+#minelogo {
+    z-index: 15;
+    position: fixed;
+    right: auto;
+    left: auto;
+    top: -30pt;
+    width: 200pt;
+    margin: auto;
+}
+
+#janela {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+body {
+    background-image: url('../img/dirt.jpg');
+}
+
+.dropdown-trigger .dropdown-content {
+    overflow: hidden;
+    overflow-x: hidden;
+    scrollbar-width: 0px;
+}
+
+#mute {
+    width: 100%;
+    height: 40pt;
+    border: 0px;
+    background: none;
+}
+
+#volume {
+    border: none;
+}
+
+#janelas div {
+    margin: 20pt;
+    padding: 15pt;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#pvol {
+    margin-top: 0pt;
+    margin-bottom: 16pt;
+    text-align: center;
+}
+
+#vol {
+    color: teal;
+}
+
+li:hover {
+    background-color: #4e342e !important;
+}
+
+/* //////////////////////////////////////////// */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 2.5px 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2.5px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+    background: #3e2723;
+    border-radius: 25px;
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 2.9px #000000, 0px 0px 0px #0d0d0d;
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #009688;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -2.5px;
+}
+
+span.thumb{
+    position: relative;
+    right: 50pt;
+    top: 0pt;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+}
+/* ////////////////////////////////// */
+
+#range-fld {
+    overflow: hidden;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 17pt;
+    margin-bottom: 0pt;
+}
+
+#dropdownname {
+    font-size: 16pt;
+}
